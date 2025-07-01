@@ -7,6 +7,9 @@ import { CategoriesModule } from './categories/categories.module';
 import { CategoriesController } from './categories/categories.controller';
 import { CategoriesService } from './categories/categories.service';
 import { AccountsModule } from './accounts/accounts.module';
+import { RolesModule } from './roles/roles.module';
+import { RolesModule } from './roles/roles.module';
+import { RolesModule } from './roles/roles.module';
 @Module({
   imports: [
     TypeOrmModule.forRoot({
@@ -26,6 +29,7 @@ import { AccountsModule } from './accounts/accounts.module';
     CatalogsModule,
     CategoriesModule,
     AccountsModule,
+    RolesModule,
   ],
   controllers: [AppController, CategoriesController],
   providers: [AppService, CategoriesService],
